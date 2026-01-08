@@ -1,0 +1,3 @@
+config ZMK_INPUT_REL_TO_KEY
+    bool "Relative movement to key input processor"
+    default y
