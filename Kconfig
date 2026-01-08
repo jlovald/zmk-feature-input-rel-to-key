@@ -1,5 +1,6 @@
-config ZMK_INPUT_XY_MAPPER
-    bool "XY-to-key input processor"
+config ZMK_INPUT_REL_TO_KEY
+    bool "Relative movement to key input processor"
     default y
     help
       Convert relative pointer movement (X/Y) into configurable key presses.
+      Sends a key press whenever accumulated relative motion crosses the configured threshold.

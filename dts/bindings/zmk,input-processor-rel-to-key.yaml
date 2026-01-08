@@ -1,0 +1,29 @@
+description: Convert relative pointer movement into configurable key presses
+
+compatible: "zmk,input-processor-rel-to-key"
+
+properties:
+  x-positive-keycode:
+    type: int
+    required: true
+    description: Keycode sent when relative X motion exceeds positive threshold
+  x-negative-keycode:
+    type: int
+    required: true
+    description: Keycode sent when relative X motion exceeds negative threshold
+  y-positive-keycode:
+    type: int
+    required: true
+    description: Keycode sent when relative Y motion exceeds positive threshold
+  y-negative-keycode:
+    type: int
+    required: true
+    description: Keycode sent when relative Y motion exceeds negative threshold
+  x-threshold:
+    type: int
+    required: true
+    description: Accumulated X motion needed to trigger a key press
+  y-threshold:
+    type: int
+    required: true
+    description: Accumulated Y motion needed to trigger a key press
