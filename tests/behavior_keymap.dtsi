@@ -1,0 +1,14 @@
+#include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+&trackball_peripheral_split {
+    device = <&trackball_peripheral>;
+
+    input-processors = <&trackball_rel_to_key>;
+
+    test_layer {
+        layers = <0>;
+        input-processors = <&trackball_rel_to_key>;
+        process-next;
+    };
+};

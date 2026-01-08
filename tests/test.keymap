@@ -1,0 +1,7 @@
+#include <dt-bindings/zmk/keymap.h>
+
+/ {
+    keymap {
+        compatible = "zmk,keymap";
+    };
+};

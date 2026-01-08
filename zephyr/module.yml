@@ -1,6 +1,7 @@
-name: zmk-feature-input-rel-to-key
+name: zmk-feature-input-xy-mapper
 build:
   depends:
+    - zmk
   cmake: .
   kconfig: Kconfig
   settings:
